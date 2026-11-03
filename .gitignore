@@ -1,0 +1,11 @@
+# Build artifacts are published as GitHub release assets, not committed.
+*.AppImage
+*.flatpak
+*.snap
+*.dmg
+*.exe
+
+# Local build directories
+CoinWallet.AppDir/
+squashfs-root/
+appimagetool-*
