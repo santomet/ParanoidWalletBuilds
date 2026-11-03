@@ -22,6 +22,10 @@ to make the build process visible, not to ask for trust.
 source build. It can still be useful, but it does not prove that the binary
 matches the source.
 
+## Releases
+
+- [Coin Wallet 6.31.0 — Linux x86_64 AppImage](https://github.com/santomet/ParanoidWalletBuilds/releases/tag/coin.space-v6.31.0)
+
 ## Verify a release
 
 1. Download the release asset and `SHA256SUMS`.

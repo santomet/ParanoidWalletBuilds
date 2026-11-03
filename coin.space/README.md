@@ -7,6 +7,7 @@
 **AppImage:** `Coin.Wallet-6.31.0-x86_64.AppImage`  
 **Size:** 115,784,184 bytes  
 **SHA-256:** `22c87d4a838d57c0ae7d98f69fda3e655cef3c6a88c2d1fa946246e328603fd7`  
+**Release:** <https://github.com/santomet/ParanoidWalletBuilds/releases/tag/coin.space-v6.31.0>  
 **Built:** 2026-11-03
 
 ## Read this first
