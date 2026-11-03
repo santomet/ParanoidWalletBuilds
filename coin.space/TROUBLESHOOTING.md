@@ -70,3 +70,25 @@ This usually means the app cannot reach `coin.space` over HTTPS. Check the same
 `curl` command above. On minimal distributions install NSS. If you are behind a
 restrictive network, use a network where the API is reachable; the wallet's
 server-assisted PIN flow does not work fully offline.
+
+## Tor and local-only operation
+
+The desktop app's onboarding is **not Tor-only**. The Tor switch in Settings
+only switches API hosts to `.onion` after login; it does not configure a SOCKS
+proxy. The `/api/v4/register` call during PIN setup uses the clearnet site URL.
+Running the AppImage under `torsocks` or a Tor-only network will block that
+call and produce the internet error above.
+
+Coin Wallet also has **no local-password mode**. The 4-digit PIN is mandatory,
+and it is exchanged with `coin.space` for a token. The only purely local secret
+is the passphrase. If you want a wallet where unlock never contacts a server,
+use a different wallet.
+
+If you want to keep using Coin Wallet, the practical options are:
+
+- give the onboarding flow clearnet access once, then enable Tor in Settings,
+- or accept that the PIN/unlock path is server-assisted and use the passphrase
+  to restore when needed.
+
+There is no supported way to disable the PIN and replace it with a local
+password in Coin Wallet 6.31.0.
