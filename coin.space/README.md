@@ -84,6 +84,16 @@ for Linux.
 See [SOURCE_BUILD.md](./SOURCE_BUILD.md) for the source-build recipe and the
 remaining blocker.
 
+## PIN troubleshooting
+
+Coin Wallet's PIN is a 4-digit, server-assisted PIN. Setup and unlock contact
+`coin.space` for a token; offline or blocked requests fail with "Error! Please
+check your internet connection and try again." There is no change-PIN item in
+Settings, and three wrong PINs erase the server token.
+
+See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for the details and recovery
+steps.
+
 ## Caveats
 
 - `AppRun` passes `--no-sandbox`. AppImage mounts do not preserve the setuid

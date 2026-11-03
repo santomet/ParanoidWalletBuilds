@@ -25,6 +25,8 @@ matches the source.
 ## Releases
 
 - [Coin Wallet 6.31.0 — Linux x86_64 AppImage](https://github.com/santomet/ParanoidWalletBuilds/releases/tag/coin.space-v6.31.0)
+  — see [coin.space/TROUBLESHOOTING.md](./coin.space/TROUBLESHOOTING.md) for the
+  4-digit server-assisted PIN behavior.
 
 ## Verify a release
 
